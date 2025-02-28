@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_2"
+    tools:context=".ui.main.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_info"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_back_btn"
+        android:src="@drawable/ic_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/sheriff_bounce"
+        android:text="@string/_4_pics_n1_word"
+        android:textColor="@color/white"
+        android:textSize="52sp"
+        app:layout_constraintBottom_toTopOf="@+id/grid_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_level_text"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="35dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/anim_coins" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_coi_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/sheriff_bounce"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="1" />
+    </LinearLayout>
+
+    <!--    <GridLayout-->
+    <!--        android:id="@+id/grid_layout"-->
+    <!--        android:layout_width="280dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="@drawable/bg_grid_layout"-->
+    <!--        android:columnCount="2"-->
+    <!--        android:rowCount="2"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintDimensionRatio="1:1"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.45">-->
+
+    <!--        <com.google.android.material.imageview.ShapeableImageView-->
+    <!--            android:id="@+id/img1_main"-->
+    <!--            style="@style/image_style"-->
+    <!--            app:shapeAppearanceOverlay="@style/RoundedSquare"-->
+    <!--            tools:src="@drawable/fri" />-->
+
+    <!--        <com.google.android.material.imageview.ShapeableImageView-->
+    <!--            android:id="@+id/img2_main"-->
+    <!--            style="@style/image_style"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            app:shapeAppearanceOverlay="@style/RoundedSquare"-->
+    <!--            tools:src="@drawable/fri" />-->
+
+    <!--        <com.google.android.material.imageview.ShapeableImageView-->
+    <!--            android:id="@+id/img3_main"-->
+    <!--            style="@style/image_style"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            app:shapeAppearanceOverlay="@style/RoundedSquare"-->
+    <!--            tools:src="@drawable/fri" />-->
+
+    <!--        <com.google.android.material.imageview.ShapeableImageView-->
+    <!--            android:id="@+id/img4_main"-->
+    <!--            style="@style/image_style"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            app:shapeAppearanceOverlay="@style/RoundedSquare"-->
+    <!--            tools:src="@drawable/fri" />-->
+    <!--    </GridLayout>-->
+
+    <FrameLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_play"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_btn_play"
+        android:fontFamily="@font/jungle_adventurer"
+        android:text="@string/play"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid_layout"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

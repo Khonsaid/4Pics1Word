@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">4Pics1Word</string>
+    <string name="play">Play</string>
+    <string name="open_correct_letter">Open one correct letter!</string>
+    <string name="remove_extra_letters">Remove extra letters!</string>
+    <string name="win_text">you found the answer and won 10 coins</string>
+    <string name="level">Level: </string>
+    <string name="_4_pics_n1_word">4 pics \n1 word</string>
+    <string name="yes">Yes</string>
+    <string name="description">\t\tUshbu ilova GITA dasturchilar akademiyasi Bootcamp 9 guruhi o\'quv jarayonida berilgan vazifalar asosida ishlab chiqiligan.</string>
+    <string name="txt_end">E\'tiboringiz uchun rahmat!</string>
+
+</resources>
